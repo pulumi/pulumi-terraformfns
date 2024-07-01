@@ -130,6 +130,8 @@ import com.pulumi.std.inputs.ReplaceArgs;
 import com.pulumi.std.inputs.ReplacePlainArgs;
 import com.pulumi.std.inputs.ReverseArgs;
 import com.pulumi.std.inputs.ReversePlainArgs;
+import com.pulumi.std.inputs.Rfc3339tounixArgs;
+import com.pulumi.std.inputs.Rfc3339tounixPlainArgs;
 import com.pulumi.std.inputs.RsadecryptArgs;
 import com.pulumi.std.inputs.RsadecryptPlainArgs;
 import com.pulumi.std.inputs.Sha1Args;
@@ -182,6 +184,8 @@ import com.pulumi.std.inputs.TrimspaceArgs;
 import com.pulumi.std.inputs.TrimspacePlainArgs;
 import com.pulumi.std.inputs.TrimsuffixArgs;
 import com.pulumi.std.inputs.TrimsuffixPlainArgs;
+import com.pulumi.std.inputs.Unixtorfc3999Args;
+import com.pulumi.std.inputs.Unixtorfc3999PlainArgs;
 import com.pulumi.std.inputs.UpperArgs;
 import com.pulumi.std.inputs.UpperPlainArgs;
 import com.pulumi.std.inputs.UrlencodeArgs;
@@ -253,6 +257,7 @@ import com.pulumi.std.outputs.PowResult;
 import com.pulumi.std.outputs.RangeResult;
 import com.pulumi.std.outputs.ReplaceResult;
 import com.pulumi.std.outputs.ReverseResult;
+import com.pulumi.std.outputs.Rfc3339tounixResult;
 import com.pulumi.std.outputs.RsadecryptResult;
 import com.pulumi.std.outputs.Sha1Result;
 import com.pulumi.std.outputs.Sha256Result;
@@ -279,6 +284,7 @@ import com.pulumi.std.outputs.TrimResult;
 import com.pulumi.std.outputs.TrimprefixResult;
 import com.pulumi.std.outputs.TrimspaceResult;
 import com.pulumi.std.outputs.TrimsuffixResult;
+import com.pulumi.std.outputs.Unixtorfc3999Result;
 import com.pulumi.std.outputs.UpperResult;
 import com.pulumi.std.outputs.UrlencodeResult;
 import com.pulumi.std.outputs.UuidResult;
@@ -2148,6 +2154,34 @@ public final class StdFunctions {
         return Deployment.getInstance().invokeAsync("std:index:reverse", TypeShape.of(ReverseResult.class), args, Utilities.withVersion(options));
     }
     /**
+     * Converts a RFC3999 formatted timestamp into a Unix timestamp with milliseconds.
+     * 
+     */
+    public static Output<Rfc3339tounixResult> rfc3339tounix(Rfc3339tounixArgs args) {
+        return rfc3339tounix(args, InvokeOptions.Empty);
+    }
+    /**
+     * Converts a RFC3999 formatted timestamp into a Unix timestamp with milliseconds.
+     * 
+     */
+    public static CompletableFuture<Rfc3339tounixResult> rfc3339tounixPlain(Rfc3339tounixPlainArgs args) {
+        return rfc3339tounixPlain(args, InvokeOptions.Empty);
+    }
+    /**
+     * Converts a RFC3999 formatted timestamp into a Unix timestamp with milliseconds.
+     * 
+     */
+    public static Output<Rfc3339tounixResult> rfc3339tounix(Rfc3339tounixArgs args, InvokeOptions options) {
+        return Deployment.getInstance().invoke("std:index:rfc3339tounix", TypeShape.of(Rfc3339tounixResult.class), args, Utilities.withVersion(options));
+    }
+    /**
+     * Converts a RFC3999 formatted timestamp into a Unix timestamp with milliseconds.
+     * 
+     */
+    public static CompletableFuture<Rfc3339tounixResult> rfc3339tounixPlain(Rfc3339tounixPlainArgs args, InvokeOptions options) {
+        return Deployment.getInstance().invokeAsync("std:index:rfc3339tounix", TypeShape.of(Rfc3339tounixResult.class), args, Utilities.withVersion(options));
+    }
+    /**
      * Decrypts an RSA-encrypted ciphertext.
      * The cipher text must be base64-encoded and the key must be in PEM format.
      * 
@@ -2956,6 +2990,34 @@ public final class StdFunctions {
      */
     public static CompletableFuture<TrimsuffixResult> trimsuffixPlain(TrimsuffixPlainArgs args, InvokeOptions options) {
         return Deployment.getInstance().invokeAsync("std:index:trimsuffix", TypeShape.of(TrimsuffixResult.class), args, Utilities.withVersion(options));
+    }
+    /**
+     * Converts a RFC3999 formatted timestamp into a Unix timestamp with milliseconds.
+     * 
+     */
+    public static Output<Unixtorfc3999Result> unixtorfc3999(Unixtorfc3999Args args) {
+        return unixtorfc3999(args, InvokeOptions.Empty);
+    }
+    /**
+     * Converts a RFC3999 formatted timestamp into a Unix timestamp with milliseconds.
+     * 
+     */
+    public static CompletableFuture<Unixtorfc3999Result> unixtorfc3999Plain(Unixtorfc3999PlainArgs args) {
+        return unixtorfc3999Plain(args, InvokeOptions.Empty);
+    }
+    /**
+     * Converts a RFC3999 formatted timestamp into a Unix timestamp with milliseconds.
+     * 
+     */
+    public static Output<Unixtorfc3999Result> unixtorfc3999(Unixtorfc3999Args args, InvokeOptions options) {
+        return Deployment.getInstance().invoke("std:index:unixtorfc3999", TypeShape.of(Unixtorfc3999Result.class), args, Utilities.withVersion(options));
+    }
+    /**
+     * Converts a RFC3999 formatted timestamp into a Unix timestamp with milliseconds.
+     * 
+     */
+    public static CompletableFuture<Unixtorfc3999Result> unixtorfc3999Plain(Unixtorfc3999PlainArgs args, InvokeOptions options) {
+        return Deployment.getInstance().invokeAsync("std:index:unixtorfc3999", TypeShape.of(Unixtorfc3999Result.class), args, Utilities.withVersion(options));
     }
     /**
      * Converts all cased letters in the given string to uppercase.

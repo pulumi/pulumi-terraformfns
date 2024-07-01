@@ -315,6 +315,11 @@ export const reverse: typeof import("./reverse").reverse = null as any;
 export const reverseOutput: typeof import("./reverse").reverseOutput = null as any;
 utilities.lazyLoad(exports, ["reverse","reverseOutput"], () => require("./reverse"));
 
+export { Rfc3339tounixArgs, Rfc3339tounixResult, Rfc3339tounixOutputArgs } from "./rfc3339tounix";
+export const rfc3339tounix: typeof import("./rfc3339tounix").rfc3339tounix = null as any;
+export const rfc3339tounixOutput: typeof import("./rfc3339tounix").rfc3339tounixOutput = null as any;
+utilities.lazyLoad(exports, ["rfc3339tounix","rfc3339tounixOutput"], () => require("./rfc3339tounix"));
+
 export { RsadecryptArgs, RsadecryptResult, RsadecryptOutputArgs } from "./rsadecrypt";
 export const rsadecrypt: typeof import("./rsadecrypt").rsadecrypt = null as any;
 export const rsadecryptOutput: typeof import("./rsadecrypt").rsadecryptOutput = null as any;
@@ -444,6 +449,11 @@ export { TrimsuffixArgs, TrimsuffixResult, TrimsuffixOutputArgs } from "./trimsu
 export const trimsuffix: typeof import("./trimsuffix").trimsuffix = null as any;
 export const trimsuffixOutput: typeof import("./trimsuffix").trimsuffixOutput = null as any;
 utilities.lazyLoad(exports, ["trimsuffix","trimsuffixOutput"], () => require("./trimsuffix"));
+
+export { Unixtorfc3999Args, Unixtorfc3999Result, Unixtorfc3999OutputArgs } from "./unixtorfc3999";
+export const unixtorfc3999: typeof import("./unixtorfc3999").unixtorfc3999 = null as any;
+export const unixtorfc3999Output: typeof import("./unixtorfc3999").unixtorfc3999Output = null as any;
+utilities.lazyLoad(exports, ["unixtorfc3999","unixtorfc3999Output"], () => require("./unixtorfc3999"));
 
 export { UpperArgs, UpperResult, UpperOutputArgs } from "./upper";
 export const upper: typeof import("./upper").upper = null as any;

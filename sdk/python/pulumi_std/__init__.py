@@ -67,6 +67,7 @@ from .provider import *
 from .range import *
 from .replace import *
 from .reverse import *
+from .rfc3339tounix import *
 from .rsadecrypt import *
 from .sha1 import *
 from .sha256 import *
@@ -93,6 +94,7 @@ from .trim import *
 from .trimprefix import *
 from .trimspace import *
 from .trimsuffix import *
+from .unixtorfc3999 import *
 from .upper import *
 from .urlencode import *
 from .uuid import *
